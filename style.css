@@ -7,6 +7,9 @@
     font-family: "Be Vietnam Pro", sans-serif;
     scroll-behavior: smooth;
 }
+:root{
+    --bgOrange: #e84949;
+}
 #wrapper{
     height: 100vh;
     overflow-y: auto;
