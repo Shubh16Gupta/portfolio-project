@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portforlio website </title>
+    <title>Portfolio website </title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,12 +18,19 @@
                     <div><a href="#projects">Projects</a></div>
                     <div><a href="#skills">Skills</a></div>
                     <div><a href="#contactme">Contact Me</a></div>
+                    <label class="theme-toggle">
+                        <input type="checkbox" id="theme-toggle">
+                        <span class="slider">
+                            <i class="fas fa-sun"></i>
+                            <i class="fas fa-moon"></i>
+                        </span>
+                    </label>
                 </div>
             </div>
 
 
             <div class="hero-section">
-                <div class="faded-text">Shubh Gupta</div>
+                <div class="absolute faded-text">Shubh Gupta</div>
                 <div class="hero-section-left">
                     <div class="hero-section-heading">Hi! Shubh Gupta</div>
                     <div class="hero-section-heading hero-section-sub-heading">
@@ -53,7 +60,7 @@
                         <img src="./images/userAsset/plus.png" alt="">
                     </div>
                     <div class="user-image">
-                        <img src="/images/userAsset/UserImage.png" alt="">
+                        <img src="/images/userAsset/final.png" alt="">
                     </div>
                 </div>
             </div>
@@ -79,6 +86,25 @@
       backDelay: 1000,
     });
   </script>
+  <script>
+    const toggle = document.getElementById("theme-toggle");
+    const body = document.body;
+    const sunIcon = document.querySelector(".fa-sun");
+    const moonIcon = document.querySelector(".fa-moon");
+
+    toggle.addEventListener("change", () => {
+        body.classList.toggle("dark-theme");
+
+        if (body.classList.contains("dark-theme")) {
+            sunIcon.style.opacity = 0;
+            moonIcon.style.opacity = 1;
+        } else {
+            sunIcon.style.opacity = 1;
+            moonIcon.style.opacity = 0;
+        }
+    });
+  </script>
+
    
 </body>
 </html>
