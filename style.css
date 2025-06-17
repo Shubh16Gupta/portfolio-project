@@ -334,12 +334,12 @@ a{
 .project-card:hover .project-number{
     display: block;
 }
-.project-number-left{
+.project-number-right{
     right: -40px;
     top: -45px;
     user-select: none;
 }
-.project-number-right{
+.project-number-left{
     left: -40px;
     top: -45px;
     user-select: none;
@@ -359,7 +359,8 @@ a{
     left: 10%;
 }
 .project-content-right{
-    right: 10%;
+    right: 10% ;
+    
 }
 .project-skills-container{
     width: 60%;
@@ -406,6 +407,9 @@ a{
 }
 #project2{
     background-image: url(./images/projects/Parallax\ web.jpg);
+}
+#project3{
+    background-image: url(./images/projects/Blog\ web.jpg);
 }
 
 
