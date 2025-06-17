@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio website </title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous">
+
 </head>
 <body>
     <div id="wrapper">
@@ -18,13 +22,7 @@
                     <div><a href="#projects">Projects</a></div>
                     <div><a href="#skills">Skills</a></div>
                     <div><a href="#contactme">Contact Me</a></div>
-                    <label class="theme-toggle">
-                        <input type="checkbox" id="theme-toggle">
-                        <span class="slider">
-                            <i class="fas fa-sun"></i>
-                            <i class="fas fa-moon"></i>
-                        </span>
-                    </label>
+                    
                 </div>
             </div>
 
@@ -64,13 +62,66 @@
                     </div>
                 </div>
             </div>
+
+        </div>
+        <div class="project-section">
+            <h2 class="page-header">Projects</h2>
+
+            <div class="project-container">
+                <div class="project-card" id="project1">
+                    <div class="project-number project-number-left">01</div>
+                    <div class="project-content project-content-left">
+                        <div class="project-skills-container">
+                            <img class="project-skills" src="./images/stack/HTML.png">
+                            <img class="project-skills" src="./images/stack/CSS.png">
+                            <img class="project-skills" src="./images/stack/Git.svg">
+                            <img class="project-skills" src="./images/stack/Github.svg">
+                        </div>
+                        <h2 class="project-heading">Image Gallary</h2>
+                        <p class="project-subheading">Every Frame Tells a Story — Step Into a World Seen Through My Lens</p>
+                        <div class="btn-grp">
+                            <a href="https://imagegallary16.netlify.app/" target="_blank"><button class="btn-pink btn-project">Read More</button></a>
+                            <a href="">
+                            <i title="GitHubLink" class="fa-brands fa-github icon"></i>
+                            </a>
+                            <a href="">
+                            <i title="LinkeInLink" class="fa-brands fa-linkedin icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" id="project2">
+                    <div class="project-number project-number-right">02</div>
+                    <div class="project-content project-content-right">
+                        <div class="project-skills-container">
+                            <img class="project-skills" src="./images/stack/HTML.png">
+                            <img class="project-skills" src="./images/stack/CSS.png">
+                            <img class="project-skills" src="./images/stack/Git.svg">
+                            <img class="project-skills" src="./images/stack/Github.svg">
+                        </div>
+                        <h2 class="project-heading">Image Gallary</h2>
+                        <p class="project-subheading">Every Frame Tells a Story — Step Into a World Seen Through My Lens</p>
+                        <div class="btn-grp">
+                            <button class="btn-pink btn-project">Read More</button>
+                            <a href="">
+                            <i title="GitHubLink" class="fa-brands fa-github icon"></i>
+                            </a>
+                            <a href="">
+                            <i title="LinkeInLink" class="fa-brands fa-linkedin icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
 
         
     </div>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+  
   <script>
     var typeData = new Typed(".role", {
       strings: [
@@ -86,25 +137,6 @@
       backDelay: 1000,
     });
   </script>
-  <script>
-    const toggle = document.getElementById("theme-toggle");
-    const body = document.body;
-    const sunIcon = document.querySelector(".fa-sun");
-    const moonIcon = document.querySelector(".fa-moon");
-
-    toggle.addEventListener("change", () => {
-        body.classList.toggle("dark-theme");
-
-        if (body.classList.contains("dark-theme")) {
-            sunIcon.style.opacity = 0;
-            moonIcon.style.opacity = 1;
-        } else {
-            sunIcon.style.opacity = 1;
-            moonIcon.style.opacity = 0;
-        }
-    });
-  </script>
-
    
 </body>
 </html>
