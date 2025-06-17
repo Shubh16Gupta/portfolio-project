@@ -398,8 +398,14 @@ a{
 .icon:hover{
     color: var(--bgOrange);
 }
-.project-content:hover{
+.project-card:hover .project-content{
     transform: scale(1.1);
+}
+#project1{
+    background-image: url(./images/projects/ImageGallary.png);
+}
+#project2{
+    background-image: url(./images/projects/Parallax\ web.jpg);
 }
 
 
