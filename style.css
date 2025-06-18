@@ -20,7 +20,8 @@ body {
     overflow-x: hidden;
 }
 .container{
-    width: 1200px;
+    max-width: 1200px;
+    width: 90%;
     margin: 0 auto;
 }
 .navbar{
@@ -74,6 +75,10 @@ a{
     margin: 4rem auto;
     padding: 0 1rem;
     padding-bottom: 8rem;
+}
+.img{
+    max-width: 100%;
+    height: auto;
 }
 .faded-text{
     user-select: none;
@@ -534,6 +539,126 @@ body.dark .page-header {
 
 body.dark .theme-toggle {
     color: white;
+}
+/* 3. Responsive Design */
+
+@media (max-width: 1024px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .hero-section-left {
+        align-items: center;
+    }
+
+    .user-image {
+        width: 100%;
+    }
+
+    .project-card {
+        height: 400px;
+        background-position: center;
+    }
+
+    .project-number {
+        font-size: 150px;
+    }
+
+    .skill-heading {
+        font-size: 40px;
+    }
+
+    .caps {
+        font-size: 60px;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .skill-container-left, .skill-container-right {
+        width: 100%;
+    }
+
+    .skill-fade-text {
+        font-size: 6em;
+        bottom: -20%;
+        right: -10%;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-items {
+        gap: 1rem;
+        padding: 0 1rem;
+        font-size: 16px;
+    }
+
+    .hero-section-heading,
+    .hero-section-sub-heading {
+        font-size: 28px;
+    }
+
+    .project-heading {
+        font-size: 30px;
+    }
+
+    .project-subheading {
+        width: 100%;
+    }
+
+    .project-skills-container {
+        width: 100%;
+    }
+
+    .skills-logo {
+        width: 60px;
+    }
+
+    
+    .project-container {
+        align-items: center;
+    }
+
+    .project-card {
+        margin: 0 auto;
+    }
+    #project2 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .page-header {
+        font-size: 50px;
+    }
+
+    .project-content {
+        padding: 1em;
+        bottom: 10%;
+    }
+
+    .project-number {
+        font-size: 100px;
+    }
+
+    .skill-heading {
+        font-size: 28px;
+    }
+
+    .caps {
+        font-size: 40px;
+    }
+
+    .btn-pink {
+        font-size: 14px;
+        padding: 0.6rem 1.6rem;
+    }
 }
 
 
