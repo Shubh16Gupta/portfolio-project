@@ -22,6 +22,12 @@
                     <div><a href="#projects">Projects</a></div>
                     <div><a href="#skills">Skills</a></div>
                     <div><a href="#contactme">Contact Me</a></div>
+                    <div id="theme-toggle" class="theme-toggle">
+                        <i class="fa-solid fa-moon"></i>
+                    </div>
+                    
+
+
                     
                 </div>
             </div>
@@ -35,10 +41,13 @@
                         I am a <span class="role"></span>
                     </div>
                     <div class="hero-section-description">
-                        I'm a software devloper and here is my portforlio website. Here you'll
-                        learn about my journey as a software devloper
+                        I'm a software developer and here is my portfolio website. Here you'll
+                        learn about my journey as a software developer
                     </div>
-                    <div class="btn-pink" id="button"> Hire me</div>
+                    <a href="https://www.linkedin.com/in/shubh-gupta-47b0b3325/" target="_blank">
+                        <div class="btn-pink" id="button"> Hire me</div>
+                    </a>
+                    
 
                 </div>
                 <div class="hero-section-right">
@@ -78,7 +87,7 @@
                             <img class="project-skills" src="./images/stack/Github.svg">
                             
                         </div>
-                        <h2 class="project-heading">Image Gallary</h2>
+                        <h2 class="project-heading">Image Gallery</h2>
                         <p class="project-subheading">Every Frame Tells a Story — Step Into a World Seen Through My Lens</p>
                         <div class="btn-grp">
                             <a href="https://imagegallary16.netlify.app/" target="_blank"><button class="btn-pink btn-project">Read More</button></a>
@@ -86,7 +95,7 @@
                             <i title="GitHubLink" class="fa-brands fa-github icon"></i>
                             </a>
                             <a href="https://www.linkedin.com/posts/shubh-gupta-47b0b3325_webdevelopment-html-css-activity-7334299821693919233-SEBx?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFIP4d8BYPI17zC4-QJguTjWHSJPyoDlH_E">
-                            <i title="LinkeInLink" class="fa-brands fa-linkedin icon"></i>
+                            <i title="LinkedInLink" class="fa-brands fa-linkedin icon"></i>
                             </a>
                         </div>
                     </div>
@@ -109,7 +118,7 @@
                             <i title="GitHubLink" class="fa-brands fa-github icon"></i>
                             </a>
                             <a href="https://www.linkedin.com/posts/shubh-gupta-47b0b3325_webdevelopment-parallaxwebsite-frontenddev-activity-7333542683220582402-SvPz?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFIP4d8BYPI17zC4-QJguTjWHSJPyoDlH_E">
-                            <i title="LinkeInLink" class="fa-brands fa-linkedin icon"></i>
+                            <i title="LinkedInLink" class="fa-brands fa-linkedin icon"></i>
                             </a>
                         </div>
                     </div>
@@ -131,12 +140,62 @@
                             <i title="GitHubLink" class="fa-brands fa-github icon"></i>
                             </a>
                             <a href="">
-                            <i title="LinkeInLink" class="fa-brands fa-linkedin icon"></i>
+                            <i title="LinkedInLink" class="fa-brands fa-linkedin icon"></i>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="container skills-container" id="skills">
+
+            <div class="skill-fade-text">Skills</div>
+            <div class="skill-container-left">
+                <h2 class="skill-heading">
+                    <span class="caps">M</span>e and
+                    <br>
+                    MyTech Stack
+                </h2>
+                <div class="skill-subheading">
+                    <p>
+                        I'm <strong>Shubh Gupta</strong>, a passionate and driven tech enthusiast from <strong>Kanpur, Uttar Pradesh,</strong> currently pursuing <strong>B.Tech in CSE with specialization in AI & ML at VIT Bhopal</strong>. 
+                        My academic journey began <strong>at Kendriya Vidyalaya, IIT Kanpur</strong>, where I completed my schooling from Class 1 to 12. 
+                        During this time, I not only focused on academics but also actively took on leadership roles—serving as <strong>House Captain</strong>,<strong>House-Vice Captain</strong> and earning the title of 
+                        <strong>Regional Youth Parliament Runner-up</strong> and <strong>News Representato</strong>r.
+
+                    </p>
+                    <p>
+                        I’m currently diving deep into <strong>web development</strong> , aiming to become a skilled <strong>Full Stack Developer</strong>. 
+                        My tech toolkit includes <strong>HTML, CSS, Python, SQL, and Pandas</strong>, 
+                        and I’m continually expanding my knowledge in backend and frontend technologies. 
+                        I enjoy crafting clean, responsive websites and working on real-world projects that blend design and functionality.
+                        I believe in learning by doing—and every new challenge is an opportunity to grow.
+                    </p>
+                    <p>
+                        Beyond the screen, I’m someone who finds rhythm in life 
+                        through <strong> playing guitar, music, and gaming</strong>. 
+                        I aspire to work in the <strong>IT sector</strong>, contributing to innovative projects
+                        and tech-driven solutions. With a blend of creativity, discipline, and 
+                        technical skill, I’m ready to take on the dynamic world of technology—one project at a time.
+                    </p>
+                </div>
+            </div>
+            <div class="skill-container-right">
+                <img src="./images/userAsset/blob vector.png" class="blob-style">
+                <img src="./images/stack/html-icon.svg" alt="" class="skills-logo">
+                <img src="./images/stack/css-icon.svg" alt="" class="skills-logo">
+                <img src="./images/stack/python.svg" alt="" class="skills-logo">
+                <img src="./images/stack/Pandas.svg" alt="" class="skills-logo">
+                <img src="./images/stack/Matplotlib.svg" alt="" class="skills-logo">
+                <img src="./images/stack/sqldatabase.svg" alt="" class="skills-logo">
+                
+                <img src="./images/stack/Javascript.svg" alt="" class="skills-logo">
+                <img src="./images/stack/Git.svg" alt="" class="skills-logo">
+                <img src="./images/stack/Github.svg" alt="" class="skills-logo">
+            </div>
+
+
 
         </div>
 
@@ -160,6 +219,24 @@
       backDelay: 1000,
     });
   </script>
+  <script>
+    const toggle = document.getElementById("theme-toggle");
+    const icon = toggle.querySelector("i");
+
+    toggle.addEventListener("click", () => {
+        document.body.classList.toggle("dark");
+
+        // Toggle icon
+        if (document.body.classList.contains("dark")) {
+            icon.classList.remove("fa-moon");
+            icon.classList.add("fa-sun");
+        } else {
+            icon.classList.remove("fa-sun");
+            icon.classList.add("fa-moon");
+        }
+    });
+</script>
+
    
 </body>
 </html>
