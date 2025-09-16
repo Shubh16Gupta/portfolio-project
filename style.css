@@ -431,6 +431,10 @@ a{
     background-image: url("./images/projects/Share\ model.png");
 }
 
+#project6{
+    background-image: url("./images/projects/password\ Generator.png");
+}
+
 .skills-container{
     position: relative;
     display: flex;
